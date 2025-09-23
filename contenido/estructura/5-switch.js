@@ -1,27 +1,28 @@
-/*
-    ESTRUCTURA SWITH
-*/
-
-// Costos de una fruta de una tienda 
-
-let expr = 'Manzanas'
-
- switch (comprar) {
-    case 'naranjas':
-        console.log('las naramjas cuestan 16q la mano')
+/**
+ *      ESTRUCTURA SWITCH
+ *
+ */
+ 
+//Costos de una fruta en la tienda
+ 
+let comprar = 'Mangos'
+ 
+switch (comprar) {
+    case 'Naranjas':
+        console.log('Las naranjes cuentas Q16 la mano')
         break;
-    case 'platanos':
-        console.log('los platanos se venen a 18 la docena')
+    case 'Platanos':
+        console.log('Los platanos se venden a Q18 la docena')
         break;
-    case 'manzanas':
-        console.log('el precio de las manzanas por unidad es de q5')
+    case 'Manzanas':
+        console.log('El precio de las manzanas por unidad es de Q5')
         break;
     //casos compartidos
-    case 'mangos':
-    case 'papayas':
-        console.log('los mangos y las papayas vale q12 la libra')
+    case 'Mangos':
+    case 'Papayas':
+        console.log('Los mangos y las papayas vale Q12 la libra')
         break;
     default:
-        console.log('No se encontraron con inventario para ${comprar}')
+        console.log(`No se encontraron con inventario para ${comprar}`) //Comillas invertidas Alt + 96
         break;
- }
+}
